@@ -6,31 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
     <title>Travel</title>
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <header>
-        <div id="nav" class="navbar">
-            <h1><a href="#"><i class="fas fa-hiking"></i> Travel.</a></h1>
-            
-      </button>
-            <nav>
-                <ul>
-                <li class="nav__links"><a href="#">Home</a></li>
-                <li class="nav__links"><a href="#">About</a></li>            
-                <li class="nav__links"><a href="#">Shop</a></li>
-                <li class="nav__links"><a href="#">Packages</a></li>
-                <li class="nav__links"><a href="#">Reviews</a></li>            
-                <li class="nav__links"><a href="#">Blogs</a></li>
-                <li class="nav__links"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li class="nav__links"><a href="#"><i class="fas fa-search"></i></a></li>            
-                </ul>
-            </nav>
-        </div>
-
-      
-
+      <div id="nav" class="navbar">
+        <h1><a href="#"><i class="fas fa-hiking"></i> Travel.</a></h1>
+        <nav>
+            <ul>
+            <li class="nav__links"><a href="#">Home</a></li>
+            <li class="nav__links"><a href="#">About</a></li>            
+            <li class="nav__links"><a href="#">Shop</a></li>
+            <li class="nav__links"><a href="#">Packages</a></li>
+            <li class="nav__links"><a href="#">Reviews</a></li>            
+            <li class="nav__links"><a href="#">Blogs</a></li>
+            <li class="nav__links"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="nav__links"><a href="#"><i class="fas fa-search"></i></a></li>            
+            </ul>
+        </nav>
+    </div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div id="head_img_1" class="swiper-slide"><img src="assets/images/home-bg-1.jpg" alt="">  
@@ -596,64 +594,6 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 70,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      window.addEventListener("scroll" ,function() {
-    let header = document.querySelector(".navbar");
-    header.classList.toggle("sticky", window.scrollY > 70);
-});
-
-var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
-        loop: true,
-        autoplay: {
-          delay: 2500
-        },
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      var swiper3 = new Swiper(".mySwiper3", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true
-      });
-
-      var swiper4 = new Swiper(".mySwiper4", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true
-      });
-
-      var swiper5 = new Swiper(".mySwiper5", {
-        slidesPerView: 4,
-        spaceBetween: 90,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true
-      });
-      </script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
