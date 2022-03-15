@@ -1183,7 +1183,7 @@
 }
 
 #footer_item4 {
-    width: 270px;
+    width: 310px;
 }
 
 .footer_item {
@@ -2057,7 +2057,7 @@
 }
 
 #footer_item4 {
-    width: 270px;
+    width: 310px;
 }
 
 .footer_item {
@@ -2093,6 +2093,7 @@
   #myBtn:hover {
     background-color: #10221b;
   }
+  
 }
 @media screen and (prefers-reduced-motion: no-preference) {
     html {

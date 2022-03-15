@@ -117,7 +117,7 @@ var swiper2 = new Swiper(".mySwiper2", {
   window.onscroll = function() {scrollFunction()};
   
   function scrollFunction() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
@@ -128,3 +128,5 @@ var swiper2 = new Swiper(".mySwiper2", {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+
